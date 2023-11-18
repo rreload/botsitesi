@@ -1,4 +1,4 @@
-import Link from "next/link";
+ilimport Link from "next/link";
 import { useEffect, useState, Fragment, useRef } from "react";
 import { useRouter } from "next/router";
 import { Menu, Transition } from '@headlessui/react';
@@ -13,8 +13,8 @@ const MobileNavbar = ({ open, setOpen, NavItems }) => {
 
                 <div className="flex justify-between border-b border-white/20 items-center px-5 py-4">
                     <div className="flex items-center">
-                        <img width="32" className="rounded-full icon-glow" src="/img/logo.jpg" />
-                        <p className=" font-extrabold ml-1 text-2xl">Astra Bot</p>
+                        <img width="32" className="rounded-full icon-glow" src="https://media.discordapp.net/attachments/1169358873287733308/1171159263025041570/ReloX.PNG?ex=655baa0f&is=6549350f&hm=020bc9cb290ef18078c39c77a0682220640d57bf6972aaa749b172cb42f75a2a&=&width=704&height=621" />
+                        <p className=" font-extrabold ml-1 text-2xl">ReloX</p>
                     </div>
                     <button onClick={() => setOpen(!open)}><i className="cursor-pointer fa fa-times text-xl mr-2" /></button>
                 </div>
@@ -44,11 +44,11 @@ const Header = ({ $, NavItems }) => {
     const { theme, setTheme } = useTheme();
 
     const colorsThemes = [
-        { id: 'violet', color: 'violet', label: 'Violet' },
-        { id: 'blue', color: 'blue', label: 'Sky' },
+        { id: 'mor', color: 'mor', label: 'Menekşe' },
+        { id: 'mavi', color: 'mavi', label: 'Gökyüzü' },
         { id: 'emerald', color: 'emerald', label: 'Emerald' },
-        { id: 'rose', color: 'rose', label: 'Rose' },
-        { id: 'amber', color: 'amber', label: 'Amber' },
+        { id: 'kırmızı', color: 'kırmızı', label: 'Gül' },
+        { id: 'turuncu', color: 'turuncu', label: 'Kehribar' },
     ];
    
     const ChangeColor = id => {
@@ -63,11 +63,11 @@ const Header = ({ $, NavItems }) => {
         const banner = localStorage.getItem("$Award_close_banner");
         if (!banner) setBanner(true);
         const theme = localStorage.getItem("theme");
-        if (theme === "violet") setHue("hue-rotate-[230deg]");
-        if (theme === "blue") setHue("hue-rotate-[180deg]");
+        if (theme === "mor") setHue("hue-rotate-[230deg]");
+        if (theme === "mavi") setHue("hue-rotate-[180deg]");
         if (theme === "emerald") setHue("hue-rotate-[70deg]");
-        if (theme === "rose") setHue("hue-rotate-[330deg]");
-        if (theme === "amber") setHue("");
+        if (theme === "kırmızı") setHue("hue-rotate-[330deg]");
+        if (theme === "turuncu") setHue("");
     }, []);
     
     return (
@@ -76,14 +76,14 @@ const Header = ({ $, NavItems }) => {
                 <div className="max-w-7xl px-5 mx-auto py-5 flex items-center justify-between">
                     <div className="flex items-center space-x-6">
                         <div className="flex items-center space-x-3">
-                            <img src="/img/logo2.png" 
+                            <img src="https://media.discordapp.net/attachments/1169358873287733308/1171159263025041570/ReloX.PNG?ex=655baa0f&is=6549350f&hm=020bc9cb290ef18078c39c77a0682220640d57bf6972aaa749b172cb42f75a2a&=&width=704&height=621" 
                                 className={`
                                     rounded-full 
                                 `}
                                 width="48" height="48"
                             />
                             <p className="invisible md:visible text-xl text-white font-semibold">
-                              <a href="/"><span className="text-amber-400">Astra</span>Bot</a>
+                              <a href="/"><span className="text-amber-400">ReloX</span>Bot</a>
                             </p>
                         </div>
                         <ul className="hidden lg:flex items-center space-x-4">
@@ -166,9 +166,9 @@ const Header = ({ $, NavItems }) => {
                                 </Menu.Items>
                             </Transition>
                         </Menu>
-                        <Link href="https://bit.ly/3PHDjyC">
+                        <Link href="https://discord.com/api/oauth2/authorize?client_id=1170430199242952766&permissions=8&scope=bot">
                             <a className="w-auto flex items-center justify-center shadow-lg gap-x-2 shadow-amber-600/20 rounded-xl py-2.5 font-medium px-7 bg-gradient-to-tl from-amber-500 to-amber-700 text-white  hover:opacity-80 transition duration-200">
-                               Invite
+                               Davet Et
                             </a>
                </Link>
                     </div>
