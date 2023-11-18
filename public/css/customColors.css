@@ -1,4 +1,4 @@
-[data-theme="violet"]{
+[data-theme="mor"]{
     --gradient: rgba(146, 51, 234, 0.2);
     --900: rgba(76, 29, 149);
     --800: rgba(91, 33, 182);
@@ -112,7 +112,7 @@
     --900-90: rgba(76, 29, 149, .90);
     
 }
-[data-theme="blue"] {
+[data-theme="mavi"] {
     --gradient: rgba(51, 136, 234, 0.2);
     --900: rgba(30, 58, 138);
     --800: rgba(30, 64, 175);
@@ -225,7 +225,7 @@
     --50-10: rgba(239, 246, 255, .10);
     --50-0: rgba(239, 246, 255, .0);
 }
-[data-theme="rose"] {
+[data-theme="kırmızı"] {
     --gradient: rgba(239, 68, 68, 0.2);
     --50: rgba(254, 242, 242);
 	--50-0: rgba(254, 242, 242, .0);
@@ -338,7 +338,7 @@
 	--900-80: rgba(127, 29, 29, .80);
 	--900-90: rgba(127, 29, 29, .90);
 }
-[data-theme=amber] {
+[data-theme=turuncu] {
     --gradient: rgba(245, 158, 11, .2);
 	--50: rgba(255, 251, 235);
 	--50-0: rgba(255, 251, 235, .0);
@@ -565,8 +565,8 @@
 	--900-90: rgba(6, 78, 59, .90);
 }
 .bg-500 { background: var(--500); }
-.text-500-violet { color: rgba(139, 92, 246); }
-.text-500-blue { color: rgba(59, 130, 246); }
+.text-500-mor { color: rgba(139, 92, 246); }
+.text-500-mavi { color: rgba(59, 130, 246); }
 .text-500-emerald { color: rgb(16, 185, 129); }
-.text-500-rose { color: rgb(239, 68, 68); }
-.text-500-amber { color: rgb(245, 158, 11); }
+.text-500-kırmızı { color: rgb(239, 68, 68); }
+.text-500-turuncu { color: rgb(245, 158, 11); }
