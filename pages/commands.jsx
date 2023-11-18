@@ -3,27 +3,46 @@ import Link from "next/link";
 
 export default function Commands() {
   const commands = [
-    "/help",
-    "/invite",
-    "/lyrics",
-    "/ping",
-    "/stats",
-    "/setdj",
-    "/play",
-    "/serach",
-    "/stop",
-    "/skip",
-    "/back",
-    "/clear",
-    "/time",
-      "/queue",
-      "/pause",
-      "/resume",
-      "/volume",
-      "/nowplaying",
-      "/save",
-      "/loop",
-      "/filter"
+    ".oylama",
+    ".oylama-kanal",
+    ".komutlar",
+    ".botbilgi",
+    ".davet",
+    ".ping",
+    ".afk",
+    ".çevir",
+    ".say",
+    ".modlog",
+    ".küfürengel",
+    ".küfürlog",
+    ".reklamengel",
+      ".reklamlog",
+      ".bansay",
+      ".sohbet-aç",
+      ".sohbet-kapat",
+      ".isimdeğiştir",
+      ".sil",
+      ".mute",
+      ".güvenlik",
+      ".otorol",
+      ".otorol-msg",
+      ".oto-rol-ayarla",
+      ".otorol-kapat",
+      ".rozetler",
+      ".profil",
+      ".avatar",
+      ".rolbilgi",
+      ".yetkilerim",
+      ".steamoyun [Oyun]",
+      ".mcödül",
+      ".tkm [Seçtigin]",
+      ".kasaaç",
+      ".trumptweet [Yazı]",
+      ".zarat",
+      ".desteaç",
+      ".mcskin",
+      ".atasözü",
+      ".ara155"
       ]
   return (
     <>
@@ -36,7 +55,7 @@ export default function Commands() {
          Bot Commands
         </p>
         <p className="text-white text-sm text-opacity-50 mb-5">
-        You can get information about the commands of the Astra Bot.
+        ReloX Bot'un komutları hakkında bilgi alabilirsiniz.
         </p>
 
         <div>
@@ -83,23 +102,23 @@ export default function Commands() {
 
         <div className="animateHeader mt-10 flex flex-wrap items-center justify-center gap-x-4">
   
-  <Link href={"https://bit.ly/3PHDjyC"}>
+  <Link href={"https://discord.com/api/oauth2/authorize?client_id=1170430199242952766&permissions=8&scope=bot"}>
   <a className={"flex items-center px-6 justify-center gap-x-2 shadow-lg shadow-amber-600/20 rounded-xl py-4 font-medium bg-gradient-to-bl from-amber-700 to-amber-500 hover:opacity-80 transition duration-200 text-white " }>
-Invite Astra</a>
+ReloX Botu Davet Et</a>
   </Link>
 
   <div className="py-10"></div>
   
-  <Link href={"https://discord.gg/ZcDprCrFTn"}>
+  <Link href={"https://discord.gg/jBfxSXjrZH"}>
   <a className={" px-6 justify-center gap-x-2 shadow-lg shadow-amber-600/20 rounded-xl py-4 font-medium bg-gradient-to-bl from-amber-700 to-amber-500 hover:opacity-80 transition duration-200 text-white " }>
-Support Server</a>
+Destek Sunucusu</a>
   </Link>
 
   <div className="py-10"></div>
   
-  <Link href={"https://bit.ly/3LYzaDe"}>
+  <Link href={"https://top.gg/bot/relox/vote"}>
   <a className={" px-6 justify-center gap-x-2 shadow-lg shadow-amber-600/20 rounded-xl py-4 font-medium bg-gradient-to-bl from-amber-700 to-amber-500 hover:opacity-80 transition duration-200 text-white " }>
-Vote Astra</a>
+Vote ReloX</a>
   </Link>
 </div>
 
